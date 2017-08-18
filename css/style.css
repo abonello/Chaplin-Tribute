@@ -1,0 +1,17 @@
+body {
+    margin-top: 60px;
+}
+
+.bg-img{
+    background-image: url('../img/filmStrip.png');
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    /* no-repeat center center;*/
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.img-center {
+    margin: 0 auto;
+}
