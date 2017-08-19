@@ -3,7 +3,7 @@ body {
 }
 
 .bg-img{
-    background-image: url('../img/filmStrip.png');
+    /* background-image: url('../img/filmStrip.png');*/
     background-size: 100px 100px;
     background-repeat: no-repeat;
     /* no-repeat center center;*/
@@ -12,6 +12,40 @@ body {
     margin: 0 auto;
 }
 
+.bg-figure {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    max-width: 653px;
+    margin: 0 auto;
+    box-shadow: 0 0 3px #eee;
+}
+
 .img-center {
     margin: 0 auto;
+}
+
+.transparentImage {
+    background-image: url('../img/filmStripCharlie1.png');
+    background-size: 100px 100px;
+    background-repeat: repeat-y;
+    opacity: 0.3;
+    height: 165vh;
+    width: 100px;
+    margin: 0 auto;
+    position: absolute;
+    top: -50px;
+    /*left: 60px;*/
+    
+}
+#filmStripSmall {
+    left: 10%;
+    opacity: 0.1;
+}
+#filmStripMedium {
+    left: 11%;
+    opacity: 0.2;
+}
+#filmStripLarge {
+    left: 12%
 }
