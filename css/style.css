@@ -4,6 +4,13 @@ body {
     font-size: 20px;
 }
 
+.text-primary {
+    font-size: 2.4em;
+}
+.figure-caption {
+    padding: 7px;
+}
+
 .bg-img{
     /* background-image: url('../img/filmStrip.png');*/
     background-size: 100px 100px;
@@ -32,7 +39,7 @@ body {
     background-size: 100px 100px;
     background-repeat: repeat-y;
     opacity: 0.3;
-    height: 165vh;
+    height: 440vh;
     width: 100px;
     margin: 0 auto;
     position: absolute;
@@ -51,9 +58,19 @@ body {
 #filmStripLarge {
     left: 10%;
 }
+
+@media (min-width: 1000px) {
+    .transparentImage {
+        height: 400vh;
+    }
+}
+
 @media (min-width: 1350px) {
     #filmStripLarge {
         left: calc(50vw - 530px); /* This will keep the Film Strip horizontally fixed for larger screens. */
+    }
+    .transparentImage {
+        height: 370vh;
     }
 }
 blockquote {
