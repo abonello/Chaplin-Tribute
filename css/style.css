@@ -50,13 +50,16 @@ body {
 #filmStripSmall {
     left: 10%;
     opacity: 0.1;
+    position: fixed;
 }
 #filmStripMedium {
     left: 11%;
     opacity: 0.2;
+    position: fixed;
 }
 #filmStripLarge {
     left: 10%;
+    position: fixed;
 }
 
 @media (min-width: 1000px) {
