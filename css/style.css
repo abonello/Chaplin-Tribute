@@ -148,30 +148,30 @@ blockquote footer cite {
  *     END MODAL     *
  *===================*/
 
- .videoSelect {
-     border-radius: 20px;
-     color: black;
-     box-shadow: 0 0 7px black;
-     margin: 5px 10px;
- }
+.videoSelect {
+    border-radius: 20px;
+    color: black;
+    box-shadow: 0 0 7px black;
+    margin: 5px 10px;
+}
 
- .largerScreens {
+.largerScreens {
     display: none;
- }
+}
 
- .tinyScreens {
+.tinyScreens {
     display: initial;
- }
+}
 
- @media screen and (min-width: 575px) {
-     .largerScreens {
+@media screen and (min-width: 575px) {
+    .largerScreens {
         display: initial;
     }
 
     .tinyScreens {
         display: none;
     } 
- }
+}
 
 /* #iframeYoutube {
     width: 100vw;
