@@ -6,6 +6,7 @@ body {
 
 .text-primary {
     font-size: 2.4em;
+    color: #222;
 }
 .figure-caption {
     padding: 7px;
@@ -34,48 +35,27 @@ body {
     margin: 0 auto;
 }
 
+.stripContainer {
+    position: fixed;
+    /* overflow: hidden; */
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    padding-left: 20px;
+}
+
 .transparentImage {
     background-image: url('../img/filmStripCharlie1.png');
     background-size: 100px 100px;
     background-repeat: repeat-y;
     opacity: 0.3;
-    height: 440vh;
+    height: 400vh;
     width: 100px;
     margin: 0 auto;
-    position: absolute;
-    top: -50px;
-    /*left: 60px;*/
-    
-}
-#filmStripSmall {
-    left: 10%;
-    opacity: 0.1;
-    position: fixed;
-}
-#filmStripMedium {
-    left: 11%;
-    opacity: 0.2;
-    position: fixed;
-}
-#filmStripLarge {
-    left: 10%;
-    position: fixed;
+    position: relative;
+    top: -300vh;
 }
 
-@media (min-width: 1000px) {
-    .transparentImage {
-        height: 400vh;
-    }
-}
-
-@media (min-width: 1350px) {
-    #filmStripLarge {
-        left: calc(50vw - 530px); /* This will keep the Film Strip horizontally fixed for larger screens. */
-    }
-    .transparentImage {
-        height: 370vh;
-    }
-}
 blockquote {
     font-size: 1.5em;
     background: #f9f9f9;

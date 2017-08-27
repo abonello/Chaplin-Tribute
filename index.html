@@ -7,17 +7,18 @@
     <title>Document</title>
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/tenderness" type="text/css"/> 
     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body class="container-fluid">
     <div class="container">
         
-
         <div class="row"> <!-- Start Main Row -->
-            <div id="filmStripSmall" class="transparentImage hidden-xs hidden-md hidden-lg hidden-xl"></div>
-            <div id="filmStripMedium" class="transparentImage hidden-xs hidden-sm hidden-lg hidden-xl"></div>
-            <div id="filmStripLarge" class="transparentImage hidden-xs hidden-sm hidden-md hidden-xl"></div>
+            <div class="stripContainer">
+                <div id="filmStripSmall" class="transparentImage hidden-xs hidden-md hidden-lg hidden-xl"></div>
+                <div id="filmStripMedium" class="transparentImage hidden-xs hidden-sm hidden-lg hidden-xl"></div>
+                <div id="filmStripLarge" class="transparentImage hidden-xs hidden-sm hidden-md hidden-xl"></div>
+            </div>
             <div class="well well-lg">
                 <h1 class="text-center text-primary">Charlie Chaplin</h1>
                 <div class="col-sm-12">
@@ -60,7 +61,9 @@
                         <h2>More history</h2>
                         <ul>
                             <li>The one-reeler Making a Living marked his film acting debut and was released on 2 February 1914. Chaplin strongly disliked the picture, but one review picked him out as "a comedian of the first water".</li>
-                            <li><blockquote> For his second appearance in front of the camera in Mabel's Strange Predicament, Chaplin selected the costume with which he became identified. He described the process in his autobiography:<br>
+                            <li><blockquote><footer class="fixQuoteWidth"><cite title="Source Title">For his second appearance in front of the camera 
+                                in Mabel's Strange Predicament, Chaplin selected the costume with which he became identified. He described the process 
+                                in his autobiography:</cite></footer>
                             "I wanted everything to be a contradiction: the pants baggy, the coat tight, the hat small and the shoes 
                             large ... I added a small moustache, which, I reasoned, would add age without hiding my expression. 
                             I had no idea of the character. But the moment I was dressed, the clothes and the makeup made me feel 
@@ -109,5 +112,6 @@
   crossorigin="anonymous"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
