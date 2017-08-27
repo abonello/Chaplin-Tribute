@@ -75,7 +75,7 @@
                             <li>In 1916, a contract was negotiated with Mutual that amounted to $670,000 a year, which Robinson says made Chaplin – at 26 years old – one of the highest paid people in the world.</li>
                         </ul>
                         <h2>Film highlights</h2>
-                        <ul>
+                        <!-- <ul>
                             <li><a href="https://www.youtube.com/watch?v=F-Y45rcGX3s">The Tramp (1915</a>)</li>
                             <li><a href="https://www.youtube.com/watch?v=G0PFTylRvb8">The Vagabond (1916)</a>
                             <li><a href="https://www.youtube.com/watch?v=502fffOxEh4">The Kid (1921)</a></li>
@@ -85,6 +85,65 @@
                             <li><a href="https://www.youtube.com/watch?v=5pgVF1aRTCs">Monsieur Verdoux (1947)</a></li>
                             <li><a href="https://www.youtube.com/watch?v=nJlooIZ4U_k">Limelight (1952)</a></li>
                         </ul>
+
+                        <h3>Start Experimenting with Bootstrap Modal</h3> -->
+                        <div class="row largerScreens">
+                        <a onclick="changeVideo('F-Y45rcGX3s,The Tramp (1915)')" class="col-xs-5 col-sm-5 col-md-4 col-lg-3">
+                            <button type="button" class="btn btn-lg videoSelect">The Tramp (1915)</button></a>
+                        <a onclick="changeVideo('G0PFTylRvb8,The Vagabond (1916)')" class="col-xs-5 col-sm-5 col-md-4 col-lg-3">
+                            <button type="button" class="btn btn-lg videoSelect">The Vagabond (1916)</button></a>
+                        <a onclick="changeVideo('502fffOxEh4,The Kid (1921)')" class="col-xs-5 col-sm-5 col-md-4 col-lg-3">
+                            <button type="button" class="btn btn-lg videoSelect">The Kid (1921)</button></a>
+                        <a onclick="changeVideo('xCvxkZJ7Fw0,The Gold Rush (1925)')" class="col-xs-5 col-sm-5 col-md-4 col-lg-3">
+                            <button type="button" class="btn btn-lg videoSelect">The Gold Rush (1925)</button></a>
+                        <a onclick="changeVideo('yoXQuiGVqAo,City Lights (1931)')" class="col-xs-5 col-sm-5 col-md-4 col-lg-3">
+                            <button type="button" class="btn btn-lg videoSelect">City Lights (1931)</button></a>
+                        <a onclick="changeVideo('yPQKFDf2BEM,The Great Dictator (1940)')" class="col-xs-5 col-sm-5 col-md-4 col-lg-3">
+                            <button type="button" class="btn btn-lg videoSelect">The Great Dictator (1940)</button></a>
+                        <a onclick="changeVideo('5pgVF1aRTCs,Monsieur Verdoux (1947)')" class="col-xs-5 col-sm-6 col-md-4 col-lg-3">
+                            <button type="button" class="btn btn-lg videoSelect">Monsieur Verdoux (1947)</button></a>
+                        <a onclick="changeVideo('nJlooIZ4U_k,Limelight (1952)')" class="col-xs-5 col-sm-5 col-md-4 col-lg-3">
+                            <button type="button" class="btn btn-lg videoSelect">Limelight (1952)</button></a>
+                        </div>
+
+                        <ul class="tinyScreens">
+                            <li><a onclick="changeVideo('F-Y45rcGX3s,The Tramp (1915)')">The Tramp (1915)</a></li>
+                            <li><a onclick="changeVideo('G0PFTylRvb8,The Vagabond (1916)')">The Vagabond (1916)</a></li>
+                            <li><a onclick="changeVideo('502fffOxEh4,The Kid (1921)')">The Kid (1921)</a></li>
+                            <li><a onclick="changeVideo('xCvxkZJ7Fw0,The Gold Rush (1925)')">The Gold Rush (1925)</a></li>
+                            <li><a onclick="changeVideo('yoXQuiGVqAo,City Lights (1931)')">City Lights (1931)</a></li>
+                            <li><a onclick="changeVideo('yPQKFDf2BEM,The Great Dictator (1940)')">The Great Dictator (1940)</a></li>
+                            <li><a onclick="changeVideo('5pgVF1aRTCs,Monsieur Verdoux (1947)')">Monsieur Verdoux (1947)</a></li>
+                            <li><a onclick="changeVideo('nJlooIZ4U_k,Limelight (1952)')">Limelight (1952)</a></li>
+                        </ul>
+
+
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div id="title">Title will be placed here automatically.</div>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <iframe id="iframeYoutube" width="560" height="315"  src="https://www.youtube.com/embed/nJlooIZ4U_k" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+
+                                    <!-- <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div> -->
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <h3>Stop Experimenting with Bootstrap Modal</h3> -->
+
                         <hr>
                         <blockquote class="fixQuoteWidth">
                         <p>Life is a tragedy when seen in close-up, but a comedy in long-shot.</p>
